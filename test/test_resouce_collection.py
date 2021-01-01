@@ -1,7 +1,13 @@
 import unittest
 from typing import List, Dict, Any
+import json
+import os
 
 from human_resource.resource_collection import ResourceCollection
+
+
+DATA_DIR: str = os.path.join(os.curdir, "data")
+TEST_DATA_JSON_FILE_PATH: str = os.path.join(DATA_DIR, "resource_collection_list.json")
 
 
 class TestResourceCollection(unittest.TestCase):
@@ -10,13 +16,8 @@ class TestResourceCollection(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        cls.resource_collection_json_data_list.append(
-            [
-                {"job_family": "PM", "quantity": 1},
-                {"job_family": "ML_AS", "job_level": "JUNIOR", "quantity": 2},
-                {"job_family": "CV_AS", "job_level": "SENIOR", "quantity": 1},
-            ]
-        )
+        with open(TEST_DATA_JSON_FILE_PATH) as fid:
+            cls.resource_collection_json_data_list = json.load(fid)
 
     def test_simple_resource_collection(self) -> None:
         for resource_collection_data in TestResourceCollection.resource_collection_json_data_list:

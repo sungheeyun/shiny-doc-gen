@@ -1,0 +1,29 @@
+[
+    [
+        {
+            "job_family": "PM",
+            "quantity": 1
+        },
+        {
+            "job_family": "ML_AS",
+            "job_level": "JUNIOR",
+            "quantity": 2
+        }
+    ],
+    [
+        {
+            "job_family": "PM",
+            "quantity": 1
+        },
+        {
+            "job_family": "ML_AS",
+            "job_level": "JUNIOR",
+            "quantity": 3
+        },
+        {
+            "job_family": "ML_AS",
+            "job_level": "SENIOR",
+            "quantity": 1
+        }
+    ]
+]

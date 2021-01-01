@@ -46,7 +46,6 @@ class TestResourceInTime(unittest.TestCase):
                 derived_resource_in_time_json_data.remove(skip_resource_in_period_json_data)
 
             self.assertEqual(derived_resource_in_time_json_data, resource_in_time_json_data_copy)
-            pass
 
         self.assertEqual(True, True)
 
