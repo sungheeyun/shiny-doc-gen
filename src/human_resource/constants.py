@@ -3,6 +3,9 @@ from enum import Enum
 from utils import classproperty
 
 
+QUANTITY_JSON_FIELD_NAME: str = "quantity"
+
+
 class JobFamily(Enum):
     PM = 1
     ML_AS = 2
