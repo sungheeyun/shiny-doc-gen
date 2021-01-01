@@ -1,7 +1,7 @@
 from __future__ import annotations
 from typing import Optional, Dict
 
-from constants import JobFamily, JobLevel
+from constants import JobFamily, JobLevel, JOB_FAMILY_JSON_FIELD_NAME, JOB_LEVEL_JSON_FIELD_NAME
 
 
 class ResourceType:
@@ -31,9 +31,9 @@ class ResourceType:
 
     @staticmethod
     def create_from_json_data(json_data: Dict[str, str]) -> ResourceType:
-        job_family: JobFamily = JobFamily[json_data[JobFamily.json_field_name]]
+        job_family: JobFamily = JobFamily[json_data[JOB_FAMILY_JSON_FIELD_NAME]]
         job_level: Optional[JobLevel] = None
-        if JobLevel.json_field_name in json_data:
-            job_level = JobLevel[json_data[JobLevel.json_field_name]]
+        if JOB_LEVEL_JSON_FIELD_NAME in json_data:
+            job_level = JobLevel[json_data[JOB_LEVEL_JSON_FIELD_NAME]]
 
         return ResourceType(job_family, job_level)

@@ -1,4 +1,0 @@
-YEAR_DATAFRAME_COLUMN_NAME: str = "year"
-QUARTER_DATAFRAME_COLUMN_NAME: str = "quarter"
-QUANTITY_JSON_FIELD_NAME: str = "quantity"
-RESOURCE_TYPE_JSON_FIELD_NAME: str = "resource_type"

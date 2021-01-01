@@ -5,7 +5,7 @@ from collections import defaultdict
 from utils import classproperty
 from json_value_base_class import JsonValueBaseClass
 from human_resource.resource_type import ResourceType
-from data_frame_conversion.constants import QUANTITY_JSON_FIELD_NAME
+from constants import QUANTITY_JSON_FIELD_NAME
 
 
 class ResourceCollection(JsonValueBaseClass):
