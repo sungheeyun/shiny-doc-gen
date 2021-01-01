@@ -3,7 +3,7 @@ from typing import Match
 import re
 
 from utils import classproperty
-from human_resource.json_value_base_class import JsonValueBaseClass
+from json_value_base_class import JsonValueBaseClass
 
 
 class Period(JsonValueBaseClass):

@@ -3,7 +3,7 @@ from typing import Dict, List, Any
 from collections import defaultdict
 
 from utils import classproperty
-from human_resource.json_value_base_class import JsonValueBaseClass
+from json_value_base_class import JsonValueBaseClass
 from human_resource.resource_type import ResourceType
 from human_resource.data_frame_conversion.constants import QUANTITY_JSON_FIELD_NAME
 
