@@ -24,9 +24,9 @@ class ResourceType:
 
     @staticmethod
     def create_from_json_data(json_data: Dict[str, str]) -> ResourceType:
-        job_family: JobFamily = JobFamily[json_data["job_family"]]
+        job_family: JobFamily = JobFamily[json_data[JobFamily.json_field_name]]
         job_level: Optional[JobLevel] = None
-        if "job_level" in json_data:
-            job_level = JobLevel[json_data["job_level"]]
+        if JobLevel.json_field_name in json_data:
+            job_level = JobLevel[json_data[JobLevel.json_field_name]]
 
         return ResourceType(job_family, job_level)
