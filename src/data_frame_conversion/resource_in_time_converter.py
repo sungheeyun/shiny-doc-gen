@@ -2,11 +2,11 @@ from typing import List
 
 from pandas import DataFrame, concat
 
-from human_resource.data_frame_conversion.dataframe_converter_base import DataFrameConverterBase
-from human_resource.data_frame_conversion.decorators import reset_dataframe_index
-from human_resource.data_frame_conversion.constants import YEAR_DATAFRAME_COLUMN_NAME, QUARTER_DATAFRAME_COLUMN_NAME
+from data_frame_conversion.dataframe_converter_base import DataFrameConverterBase
+from data_frame_conversion.decorators import reset_dataframe_index
+from data_frame_conversion.constants import YEAR_DATAFRAME_COLUMN_NAME, QUARTER_DATAFRAME_COLUMN_NAME
 from human_resource.resource_in_time import ResourceInTime
-from human_resource.data_frame_conversion.resource_collection_converter import ResourceCollectionConverter
+from data_frame_conversion.resource_collection_converter import ResourceCollectionConverter
 
 
 class ResourceInTimeConverter(DataFrameConverterBase):

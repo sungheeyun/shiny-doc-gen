@@ -1,6 +1,6 @@
 import unittest
 
-from human_resource.constants import JobFamily, JobLevel
+from constants import JobFamily, JobLevel
 
 
 class TestEnums(unittest.TestCase):

@@ -5,6 +5,9 @@ from abc import abstractmethod, ABC
 from utils import classproperty
 
 
+# TODO MED detach json related methods from classes because we should apply single responsibility principle (SRP)
+
+
 class JsonValueBaseClass(ABC):
     """
     Abstract base class. Every class in human_resource should subclass this class.

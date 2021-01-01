@@ -2,11 +2,11 @@ from typing import Dict, List
 
 from pandas import DataFrame, concat
 
-from human_resource.data_frame_conversion.dataframe_converter_base import DataFrameConverterBase
-from human_resource.data_frame_conversion.decorators import reset_dataframe_index
+from data_frame_conversion.dataframe_converter_base import DataFrameConverterBase
+from data_frame_conversion.decorators import reset_dataframe_index
 from human_resource.resource_collection import ResourceCollection
-from human_resource.constants import JobFamily, JobLevel
-from human_resource.data_frame_conversion.constants import QUANTITY_JSON_FIELD_NAME, RESOURCE_TYPE_JSON_FIELD_NAME
+from constants import JobFamily, JobLevel
+from data_frame_conversion.constants import QUANTITY_JSON_FIELD_NAME, RESOURCE_TYPE_JSON_FIELD_NAME
 
 
 class ResourceCollectionConverter(DataFrameConverterBase):
