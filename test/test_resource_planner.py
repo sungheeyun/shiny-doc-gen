@@ -10,7 +10,7 @@ DATA_DIR: str = os.path.join(os.curdir, "data")
 TEST_DATA_JSON_FILE_PATH: str = os.path.join(DATA_DIR, "resource_plan.json")
 
 
-class TestResourcePlan(unittest.TestCase):
+class TestResourcePlanner(unittest.TestCase):
     resource_plan_json_data_list: list = list()
 
     @classmethod
@@ -24,7 +24,7 @@ class TestResourcePlan(unittest.TestCase):
         self.maxDiff = None
 
     def test_resource_plan(self) -> None:
-        for resource_plan_json_data in TestResourcePlan.resource_plan_json_data_list:
+        for resource_plan_json_data in TestResourcePlanner.resource_plan_json_data_list:
             resource_planner: ResourcePlanner = ResourcePlanner.create_from_json_data(resource_plan_json_data)
             new_resource_plan_json_data: Any = resource_planner.to_json_data()
             new_resource_plan_json_data
