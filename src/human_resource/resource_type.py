@@ -16,6 +16,13 @@ class ResourceType:
         self.job_family: JobFamily = job_family
         self.job_level: Optional[JobLevel] = job_level
 
+    @property
+    def resource_type_str(self) -> str:
+        if self.job_level is None:
+            return self.job_family.name
+        else:
+            return f"{self.job_level.name} {self.job_family.name}"
+
     def to_json_data(self) -> Dict[str, str]:
         json_data: Dict[str, str] = dict(job_family=self.job_family.name)
         if self.job_level is not None:
