@@ -1,0 +1,3 @@
+
+YEAR_DATAFRAME_COLUMN_NAME: str = "year"
+QUARTER_DATAFRAME_COLUMN_NAME: str = "quarter"
