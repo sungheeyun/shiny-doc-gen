@@ -1,9 +1,15 @@
 from typing import List, Dict, Any, Set
 import unittest
+import json
+import os
 
 from human_resource.period import Period
 from human_resource.resource_collection import ResourceCollection
 from human_resource.resource_in_time import ResourceInTime
+
+
+DATA_DIR: str = os.path.join(os.curdir, "data")
+TEST_DATA_JSON_FILE_PATH: str = os.path.join(DATA_DIR, "resource_in_time_list.json")
 
 
 class TestResourceInTime(unittest.TestCase):
@@ -12,75 +18,8 @@ class TestResourceInTime(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        cls.resource_in_time_json_data_list.append(
-            [
-                {
-                    "period": "Q4-2020",
-                    "resource_collection": [
-                        {"job_family": "PM", "quantity": 1},
-                        {"job_family": "ML_AS", "job_level": "JUNIOR", "quantity": 2},
-                    ],
-                },
-                {
-                    "period": "Q1-2021",
-                    "resource_collection": [
-                        {"job_family": "PM", "quantity": 1},
-                        {"job_family": "ML_AS", "job_level": "JUNIOR", "quantity": 3},
-                        {"job_family": "ML_AS", "job_level": "SENIOR", "quantity": 1},
-                    ],
-                },
-                {"period": "Q2-2021", "resource_collection": "same"},
-                {"period": "Q3-2021", "resource_collection": "same"},
-                {"period": "Q4-2021", "resource_collection": "same"},
-            ]
-        )
-
-        cls.resource_in_time_json_data_list.append(
-            [
-                {
-                    "period": "Q4-2020",
-                    "resource_collection": [
-                        {"job_family": "PM", "quantity": 1},
-                        {"job_family": "ML_AS", "job_level": "JUNIOR", "quantity": 2},
-                    ],
-                }
-            ]
-        )
-
-        cls.resource_in_time_json_data_list.append(
-            [
-                {
-                    "period": "Q4-2020",
-                    "resource_collection": [
-                        {"job_family": "PM", "quantity": 1},
-                        {"job_family": "ML_AS", "job_level": "JUNIOR", "quantity": 2},
-                    ],
-                }
-            ]
-        )
-
-        cls.resource_in_time_json_data_list.append(
-            [
-                {
-                    "period": "Q1-2021",
-                    "resource_collection": [
-                        {"job_family": "PM", "quantity": 1},
-                        {"job_family": "ML_AS", "job_level": "JUNIOR", "quantity": 3},
-                        {"job_family": "ML_AS", "job_level": "SENIOR", "quantity": 1},
-                    ],
-                },
-                {
-                    "period": "Q2-2021",
-                    "resource_collection": [
-                        {"job_family": "PM", "quantity": 1},
-                        {"job_family": "ML_AS", "job_level": "JUNIOR", "quantity": 3},
-                        {"job_family": "ML_AS", "job_level": "SENIOR", "quantity": 2},
-                    ],
-                },
-                {"period": "Q3-2021", "resource_collection": "same"},
-                {"period": "Q4-2021", "resource_collection": "same"},
-            ]
-        )
+        with open(TEST_DATA_JSON_FILE_PATH) as fid:
+            cls.resource_in_time_json_data_list = json.load(fid)
 
     def test_resource_in_time(self):
         for resource_in_time_json_data in TestResourceInTime.resource_in_time_json_data_list:
@@ -107,6 +46,7 @@ class TestResourceInTime(unittest.TestCase):
                 derived_resource_in_time_json_data.remove(skip_resource_in_period_json_data)
 
             self.assertEqual(derived_resource_in_time_json_data, resource_in_time_json_data_copy)
+            pass
 
         self.assertEqual(True, True)
 

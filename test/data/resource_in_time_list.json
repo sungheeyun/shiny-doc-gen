@@ -1,0 +1,115 @@
+[
+    [
+        {
+            "period": "Q4-2020",
+            "resource_collection": [
+                {
+                    "job_family": "PM",
+                    "quantity": 1
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "JUNIOR",
+                    "quantity": 2
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "period": "Q1-2021",
+            "resource_collection": [
+                {
+                    "job_family": "PM",
+                    "quantity": 1
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "JUNIOR",
+                    "quantity": 3
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "SENIOR",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "period": "Q2-2021",
+            "resource_collection": "same"
+        },
+        {
+            "period": "Q3-2021",
+            "resource_collection": "same"
+        },
+        {
+            "period": "Q4-2021",
+            "resource_collection": "same"
+        }
+    ],
+    [
+        {
+            "period": "Q4-2020",
+            "resource_collection": [
+                {
+                    "job_family": "PM",
+                    "quantity": 1
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "JUNIOR",
+                    "quantity": 2
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "period": "Q1-2021",
+            "resource_collection": [
+                {
+                    "job_family": "PM",
+                    "quantity": 1
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "JUNIOR",
+                    "quantity": 3
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "SENIOR",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "period": "Q2-2021",
+            "resource_collection": [
+                {
+                    "job_family": "PM",
+                    "quantity": 1
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "JUNIOR",
+                    "quantity": 3
+                },
+                {
+                    "job_family": "ML_AS",
+                    "job_level": "SENIOR",
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "period": "Q3-2021",
+            "resource_collection": "same"
+        },
+        {
+            "period": "Q4-2021",
+            "resource_collection": "same"
+        }
+    ]
+]
