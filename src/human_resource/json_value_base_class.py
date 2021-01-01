@@ -5,7 +5,7 @@ from abc import abstractmethod, ABC
 from utils import classproperty
 
 
-class JasonValueBaseClass(ABC):
+class JsonValueBaseClass(ABC):
     """
     Abstract base class. Every class in human_resource should subclass this class.
     """
@@ -16,7 +16,7 @@ class JasonValueBaseClass(ABC):
 
     @staticmethod
     @abstractmethod
-    def create_from_json_data(json_data: Any) -> JasonValueBaseClass:
+    def create_from_json_data(json_data: Any) -> JsonValueBaseClass:
         assert False
 
     @classproperty

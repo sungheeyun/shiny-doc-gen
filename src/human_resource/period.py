@@ -3,10 +3,10 @@ from typing import Match
 import re
 
 from utils import classproperty
-from human_resource.json_value_base_class import JasonValueBaseClass
+from human_resource.json_value_base_class import JsonValueBaseClass
 
 
-class Period(JasonValueBaseClass):
+class Period(JsonValueBaseClass):
     """
     Quater-Year. Examples are
     - Q1-2020

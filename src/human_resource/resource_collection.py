@@ -3,12 +3,12 @@ from typing import Dict, List, Any
 from collections import defaultdict
 
 from utils import classproperty
-from human_resource.json_value_base_class import JasonValueBaseClass
+from human_resource.json_value_base_class import JsonValueBaseClass
 from human_resource.resource_type import ResourceType
-from human_resource.constants import QUANTITY_JSON_FIELD_NAME
+from human_resource.data_frame_conversion.constants import QUANTITY_JSON_FIELD_NAME
 
 
-class ResourceCollection(JasonValueBaseClass):
+class ResourceCollection(JsonValueBaseClass):
     """
     Resource collection. Examples are
     - 1 PM, 3 Senior CV ASs, 2 Junior ML ASs
