@@ -1,5 +1,7 @@
+from __future__ import annotations
 from typing import Optional, Dict
-from human_resource.enums import JobFamily, JobLevel
+
+from human_resource.constants import JobFamily, JobLevel
 
 
 class ResourceType:
@@ -14,8 +16,17 @@ class ResourceType:
         self.job_family: JobFamily = job_family
         self.job_level: Optional[JobLevel] = job_level
 
-    def to_data(self) -> Dict[str, str]:
-        data: Dict[str, str] = dict(job_family=self.job_family.name)
+    def to_json_data(self) -> Dict[str, str]:
+        json_data: Dict[str, str] = dict(job_family=self.job_family.name)
         if self.job_level is not None:
-            data.update(job_level=self.job_level.name)
-        return data
+            json_data.update(job_level=self.job_level.name)
+        return json_data
+
+    @staticmethod
+    def create_from_json_data(json_data: Dict[str, str]) -> ResourceType:
+        job_family: JobFamily = JobFamily[json_data["job_family"]]
+        job_level: Optional[JobLevel] = None
+        if "job_level" in json_data:
+            job_level = JobLevel[json_data["job_level"]]
+
+        return ResourceType(job_family, job_level)
