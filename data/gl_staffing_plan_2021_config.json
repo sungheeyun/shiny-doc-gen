@@ -1,0 +1,7 @@
+{
+  "data_directory": "../data",
+  "resource_plan_file_list": [
+    "gl_hiring_2021.json"
+  ],
+  "format_config_file": "resource_planner_format_config.json"
+}

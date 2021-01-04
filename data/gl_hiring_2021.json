@@ -1,0 +1,750 @@
+{
+  "project_list": [
+    {
+      "project_name": "SPC",
+      "description": "statistical process control",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            }
+          ]
+        }
+      ],
+      "required_resource": [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 3
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "SENIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection":[
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 3
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "SENIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "VM",
+      "description": "virtual metrology",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 3
+            }
+          ]
+        }
+      ],
+      "required_resource" : [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 3
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 4
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "SENIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": "same"
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "AIM",
+      "description": "automatic image metrology",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "SENIOR",
+              "quantity": 2
+            }
+          ]
+        }
+      ],
+      "required_resource" : [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "SENIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "SENIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "SENIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "SWE",
+              "job_level": "SENIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "APC",
+      "description": "advanced process control",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": []
+        }
+      ],
+      "required_resource" : [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "PSD",
+      "description": "planning, scheduling, and dispatching",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            }
+          ]
+        }
+      ],
+      "required_resource" : [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "OP_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "OP_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "OP_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "OP_AS",
+              "job_level": "SENIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "OP_AS",
+              "job_level": "JUNIOR",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "PdM",
+      "description": "predictive maintenance",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+          ]
+        }
+      ],
+      "required_resource": [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "YAP",
+      "description": "yield analysis and prediction",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+          ]
+        }
+      ],
+      "required_resource": [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            },
+            {
+              "job_family": "CV_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "SKI",
+      "description": "SK innovation",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+          ]
+        }
+      ],
+      "required_resource": [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": "same"
+        }
+      ]
+    },
+    {
+      "project_name": "SIL",
+      "description": "SK siltron",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+          ]
+        }
+      ],
+      "required_resource": [
+        {
+          "period": "Q1-2021",
+          "resource_collection": [
+
+          ]
+        },
+        {
+          "period": "Q2-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": [
+            {
+              "job_family": "PM",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "SENIOR",
+              "quantity": 1
+            },
+            {
+              "job_family": "ML_AS",
+              "job_level": "JUNIOR",
+              "quantity": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "project_name": "Software Platform",
+      "description": "Software Platform",
+      "current_resource": [
+        {
+          "period": "Q4-2020",
+          "resource_collection": [
+          ]
+        }
+      ],
+      "required_resource": [
+        {
+          "period": "Q3-2021",
+          "resource_collection": [
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "period": "Q4-2021",
+          "resource_collection": [
+            {
+              "job_family": "SWE",
+              "job_level": "JUNIOR",
+              "quantity": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

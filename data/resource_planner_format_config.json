@@ -1,0 +1,15 @@
+{
+  "project_orde": ["SPC"],
+  "project_order": ["SPC","VM","AIM", "PdM", "APC", "PSD", "YAP"],
+  "resource_type_order": [
+    "PM",
+    "JUNIOR ML_AS",
+    "SENIOR ML_AS",
+    "JUNIOR CV_AS",
+    "SENIOR CV_AS",
+    "JUNIOR OP_AS",
+    "SENIOR OP_AS",
+    "JUNIOR SWE",
+    "SENIOR SWE"
+  ]
+}
