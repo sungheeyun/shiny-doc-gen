@@ -8,9 +8,9 @@ from pandas import DataFrame
 from human_resource.resource_collection import ResourceCollection
 from human_resource.resource_in_time import ResourceInTime
 from resource_planning.resource_planner import ResourcePlanner
-from data_frame_conversion.resource_collection_converter import ResourceCollectionConverter
-from data_frame_conversion.resource_in_time_converter import ResourceInTimeConverter
-from data_frame_conversion.resource_planner_converter import ResourcePlannerConverter
+from dataframe_conversion.resource_collection_converter import ResourceCollectionConverter
+from dataframe_conversion.resource_in_time_converter import ResourceInTimeConverter
+from dataframe_conversion.resource_planner_converter import ResourcePlannerConverter
 
 
 DATA_DIR: str = os.path.join(os.curdir, "data")

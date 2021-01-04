@@ -36,8 +36,9 @@ class ResourceInTime:
     def create_from_json_data(json_data: List[Dict[str, Any]]) -> ResourceInTime:
         period_data_dict: Dict[Period, List[Dict[str, Any]]] = dict()
         for period_resource_collection_data in json_data:
-            assert Period.json_field_name in period_resource_collection_data, list(
-                period_resource_collection_data.keys()
+            assert Period.json_field_name in period_resource_collection_data, (
+                list(period_resource_collection_data.keys()),
+                Period.json_field_name,
             )
             assert ResourceCollection.json_field_name in period_resource_collection_data, (
                 ResourceCollection.json_field_name,

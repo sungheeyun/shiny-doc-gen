@@ -2,10 +2,13 @@ from typing import List
 
 from pandas import DataFrame, concat
 
-from data_frame_conversion.dataframe_converter_base import DataFrameConverterBase
-from data_frame_conversion.decorators import reset_dataframe_index
-from data_frame_conversion.resource_in_time_converter import ResourceInTimeConverter
-from data_frame_conversion.conversion_constants import RESOURCE_STATUS_DATAFRAME_COLUMN_NAME, PROJECT_DATAFRAME_COLUMN_NAME
+from dataframe_conversion.dataframe_converter_base import DataFrameConverterBase
+from dataframe_conversion.decorators import reset_dataframe_index
+from dataframe_conversion.resource_in_time_converter import ResourceInTimeConverter
+from dataframe_conversion.conversion_constants import (
+    RESOURCE_STATUS_DATAFRAME_COLUMN_NAME,
+    PROJECT_DATAFRAME_COLUMN_NAME,
+)
 from human_resource.resource_in_time import ResourceInTime
 from resource_planning.resource_planner import ResourcePlanner
 from resource_planning.project import Project
@@ -30,11 +33,13 @@ class ResourcePlannerConverter(DataFrameConverterBase):
             current_resource_dataframe[RESOURCE_STATUS_DATAFRAME_COLUMN_NAME] = "current"
             required_resource_dataframe[RESOURCE_STATUS_DATAFRAME_COLUMN_NAME] = "required"
 
-            project_resource_plan_data_frame: DataFrame = concat((current_resource_dataframe, required_resource_dataframe))
+            project_resource_plan_dataframe: DataFrame = concat(
+                (current_resource_dataframe, required_resource_dataframe)
+            )
 
-            assert PROJECT_DATAFRAME_COLUMN_NAME not in project_resource_plan_data_frame.columns
-            project_resource_plan_data_frame[PROJECT_DATAFRAME_COLUMN_NAME] = project.name
+            assert PROJECT_DATAFRAME_COLUMN_NAME not in project_resource_plan_dataframe.columns
+            project_resource_plan_dataframe[PROJECT_DATAFRAME_COLUMN_NAME] = project.name
 
-            dataframe_list.append(project_resource_plan_data_frame)
+            dataframe_list.append(project_resource_plan_dataframe)
 
         return concat(dataframe_list)

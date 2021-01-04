@@ -2,11 +2,11 @@ from typing import List
 
 from pandas import DataFrame, concat
 
-from data_frame_conversion.dataframe_converter_base import DataFrameConverterBase
-from data_frame_conversion.decorators import reset_dataframe_index
-from data_frame_conversion.conversion_constants import YEAR_DATAFRAME_COLUMN_NAME, QUARTER_DATAFRAME_COLUMN_NAME
+from dataframe_conversion.dataframe_converter_base import DataFrameConverterBase
+from dataframe_conversion.decorators import reset_dataframe_index
+from dataframe_conversion.conversion_constants import YEAR_DATAFRAME_COLUMN_NAME, QUARTER_DATAFRAME_COLUMN_NAME
 from human_resource.resource_in_time import ResourceInTime
-from data_frame_conversion.resource_collection_converter import ResourceCollectionConverter
+from dataframe_conversion.resource_collection_converter import ResourceCollectionConverter
 
 
 class ResourceInTimeConverter(DataFrameConverterBase):
@@ -23,7 +23,7 @@ class ResourceInTimeConverter(DataFrameConverterBase):
             resource_collection_dataframe[YEAR_DATAFRAME_COLUMN_NAME] = period.year
 
             assert QUARTER_DATAFRAME_COLUMN_NAME not in resource_collection_dataframe.columns
-            resource_collection_dataframe[QUARTER_DATAFRAME_COLUMN_NAME] = period.quarter
+            resource_collection_dataframe[QUARTER_DATAFRAME_COLUMN_NAME] = f"Q{period.quarter}"
 
             dataframe_list.append(resource_collection_dataframe)
 

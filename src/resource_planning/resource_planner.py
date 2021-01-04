@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Any, List, Dict
+from typing import Any, List, Dict, Set
 
 from json_value_base_class import JsonValueBaseClass
 from resource_planning.project import Project
@@ -17,10 +17,13 @@ class ResourcePlanner(JsonValueBaseClass):
 
     def __init__(self) -> None:
         self.project_resource_plan_list: List[Dict[str, Any]] = list()
+        self.project_name_set: Set[str] = set()
 
     def add_project_resource_plan(
         self, project: Project, current_resource: ResourceInTime, required_resource: ResourceInTime
     ) -> None:
+        assert project.name not in self.project_name_set, (self.project_name_set, project.name)
+        self.project_name_set.add(project.name)
         self.project_resource_plan_list.append(
             dict(project=project, current_resource=current_resource, required_resource=required_resource)
         )
