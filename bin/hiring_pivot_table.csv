@@ -1,0 +1,13 @@
+resource_status,current,required,required,required,required
+year,2020,2021,2021,2021,2021
+quarter,Q4,Q1,Q2,Q3,Q4
+resource_type,,,,,
+PM,5,4,1,0,0
+JUNIOR ML_AS,13,3,5,4,1
+SENIOR ML_AS,7,3,3,1,0
+JUNIOR CV_AS,4,1,2,1,0
+SENIOR CV_AS,0,0,0,0,0
+JUNIOR OP_AS,3,0,2,1,0
+SENIOR OP_AS,2,1,0,1,0
+JUNIOR SWE,7,1,2,2,2
+SENIOR SWE,3,0,2,1,0

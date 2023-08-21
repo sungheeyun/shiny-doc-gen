@@ -1,0 +1,11 @@
+resource_status,,current,required,required,required,required
+year,,2020,2021,2021,2021,2021
+quarter,,4,1,2,3,4
+project,resource_type,,,,,
+SPC,PM,1,1,1,1,1
+SPC,JUNIOR ML_AS,2,3,3,3,3
+SPC,SENIOR ML_AS,0,1,1,1,1
+SPC,SWE,0,0,1,1,1
+VM,PM,1,1,1,1,1
+VM,JUNIOR ML_AS,2,3,3,3,3
+VM,SENIOR ML_AS,0,1,2,2,2
